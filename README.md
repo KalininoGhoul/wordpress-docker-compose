@@ -1,5 +1,7 @@
 # wordpress-docker-compose
 
+Чтобы запустить контейнер
+
 `docker-compose up -d`
 
 Когда начинаем работу впервые 
