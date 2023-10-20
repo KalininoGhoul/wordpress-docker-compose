@@ -2,7 +2,7 @@
 
 Установка
 
-`docker stop $(docker ps -a)`
+`docker stop $(docker ps -a -q)`
 
 `git clone https://github.com/KalininoGhoul/wordpress-docker-compose.git`
 
