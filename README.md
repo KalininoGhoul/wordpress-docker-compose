@@ -4,6 +4,8 @@
 
 Когда начинаем работу впервые 
 
+Создаем копию файла `sample.env` с названием `.env`  
+
 `docker exec -it wp-wordpress bash`
 
 `cd ..
