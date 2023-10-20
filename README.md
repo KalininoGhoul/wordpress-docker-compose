@@ -20,7 +20,7 @@ docker-compose up -d
 ``` 
 
 ```
-docker exec -it lamp-php8 bash
+docker exec -it wp-wordpress bash
 
 cd ..
 chmod 777 -R html
