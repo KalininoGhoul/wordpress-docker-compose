@@ -2,7 +2,8 @@
 
 `docker-compose up -d`
 
-Когда начинаем работу впервые \n
+Когда начинаем работу впервые 
+
 `docker exec -it wp-wordpress bash`
 
 `cd ..
@@ -10,5 +11,6 @@ chmod 777 -R html
 exit`
 
 
-Когда завершаем работу \n
+Когда завершаем работу
+
 `docker-compose down`
