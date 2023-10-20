@@ -1,5 +1,9 @@
 # wordpress-docker-compose
 
+Установка
+
+`git clone https://github.com/KalininoGhoul/wordpress-docker-compose.git`
+
 Чтобы запустить контейнер
 
 `docker-compose up -d`
