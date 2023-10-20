@@ -4,6 +4,8 @@
 
 `git clone https://github.com/KalininoGhoul/wordpress-docker-compose.git`
 
+`cd wordpress-docker-compose`
+
 Чтобы запустить контейнер
 
 `docker-compose up -d`
