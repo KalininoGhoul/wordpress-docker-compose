@@ -6,9 +6,10 @@
 docker stop $(docker ps -a -q)
 ```
 
-`git clone https://github.com/KalininoGhoul/wordpress-docker-compose.git`
-
-`cd wordpress-docker-compose`
+```
+git clone https://github.com/KalininoGhoul/wordpress-docker-compose.git
+cd wordpress-docker-compose
+```
 
 При первом запуске
 
@@ -31,9 +32,12 @@ exit
 ```
 docker stop $(docker ps -a -q)
 ```
-
-`docker-compose up -d`
+```
+docker-compose up -d
+```
 
 Когда завершаем работу
 
-`docker-compose down`
+```
+docker-compose down
+```
