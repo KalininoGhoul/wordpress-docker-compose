@@ -1,0 +1,45 @@
+version: "1"
+
+services:
+  wordpress:
+    image: wordpress:apache
+    container_name: ${COMPOSE_NAME}-wordpress
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./wordpress:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+
+  db:
+    image: mysql:5.7
+    container_name: ${COMPOSE_NAME}-db
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+
+  pma:
+    image: phpmyadmin
+    container_name: ${COMPOSE_NAME}-pma
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_ROOT_PASSWORD}
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
