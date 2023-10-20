@@ -8,9 +8,12 @@
 
 `docker exec -it wp-wordpress bash`
 
-`cd ..
-chmod 777 -R html
-exit`
+`cd ..`
+
+`chmod 777 -R html`
+
+
+`exit`
 
 
 Когда завершаем работу
