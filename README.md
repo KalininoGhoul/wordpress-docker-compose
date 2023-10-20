@@ -6,15 +6,13 @@
 
 Создаем копию файла `sample.env` с названием `.env`  
 
-`docker exec -it wp-wordpress bash`
+```
+docker exec -it wp-wordpress bash
 
-`cd ..`
-
-`chmod 777 -R html`
-
-
-`exit`
-
+cd ..
+chmod 777 -R html
+exit
+```
 
 Когда завершаем работу
 
